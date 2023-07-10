@@ -1,0 +1,59 @@
+/*
+  alignment and justification
+*/
+
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: end; }
+.justify-start { justify-content: start; }
+
+
+/*
+  display
+*/
+
+.block {
+  display: block;
+  margin: 0 0 .75rem;
+}
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+
+
+/*
+  gap for flex and grid
+*/
+
+.gap-1 { gap: 1rem; }
+.gap-15 { gap: 1.5rem; }
+.gap-2 { gap: 2rem; }
+
+
+/*
+  margins + spacing
+*/
+
+.m-0 { margin: 0; }
+
+.mb-05 { margin-bottom: .5rem; }
+.mb-075 { margin-bottom: .75rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-15 { margin-bottom: 1.5rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+.mt-05 { margin-top: .5rem; }
+.mt-075 { margin-top: .75rem; }
+.mt-1 { margin-top: 1rem; }
+.mt-15 { margin-top: 1.5rem; }
+.mt-2 { margin-top: 2rem; }
+
+
+/*
+  white-space
+*/
+
+.ws-normal { white-space: normal; }
+.ws-pre-line { white-space: pre-line; }

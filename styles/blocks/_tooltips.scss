@@ -1,0 +1,12 @@
+.tooltip {
+  @include background-color(color(neutral, 3), color(black));
+  border-radius: 1.5rem;
+  display: inline-block;
+  font-family: font(text, family);
+  font-size: font(small, size);
+  font-weight: font(text, weight);
+  line-height: 1;
+  margin: 0 .25rem;
+  padding: .25rem .75rem;
+  white-space: nowrap;
+}

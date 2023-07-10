@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+body {
+  background: color(neutral, 1);
+  color: color(black);
+  font-family: font(text, family);
+  font-size: font(text, size);
+  font-weight: font(text, weight);
+  line-height: font(text, line-height);
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.link { color: color(primary); }
+.link:hover { color: color(primary, 2); }
+
+code,
+pre,
+.code {
+  font-family: font(monospace, family);
+  font-size: font(monospace, size);
+  font-weight: font(monospace, weight);
+  line-height: #{calc(font(text, size) * font(text, line-height))};
+  white-space: pre-line;
+}
+
+p {
+  margin: 0 0 .75rem;
+}
+
+small,
+.small {
+  font-size: font(small, size);
+  font-weight: font(small, weight);
+}
+
+strong,
+.strong {
+  font-weight: font(strong, weight);
+}
+
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+  font-family: font(title, family);
+  font-weight: font(title, weight);
+  line-height: font(title, line-height);
+  margin: 0 0 .75rem;
+}
+
+h1 { font-size: font(title, size, 1); }
+h2 { font-size: font(title, size, 2); }
+h3 { font-size: font(title, size, 3); }
+h4 { font-size: font(title, size, 4); }
+h5 { font-size: font(title, size, 5); }
+h6 { font-size: font(title, size, 6); }
+
+small {
+  font-size: font(small, size);
+  font-weight: font(small, weight);
+}
+
+ol,
+ul {
+  margin: 0 0 1rem 1.5rem;
+}
+
+ol li,
+ul li {
+  margin: 0 0 .5rem;
+}
+
+hr {
+  border: 0 solid color(border);
+  border-width: 1px 0 0;
+  margin: 2rem 0;
+}

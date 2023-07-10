@@ -1,0 +1,779 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inconsolata&family=Playfair+Display:wght@600&display=swap");
+/*
+  fonts by group
+*/
+/*
+  font accessor function
+*/
+/*
+  color helper functions + mixins
+*/
+/*
+  initial colors
+*/
+/*
+  color by name
+*/
+/*
+  color accessor function
+*/
+/*
+  color by element property
+*/
+/*
+  color swatches
+*/
+/*
+  initial color swatches
+*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inconsolata&family=Playfair+Display:wght@600&display=swap");
+.swatch.primary {
+  background: #498300;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.primary, .swatch.primary::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary::after {
+  content: "primary #498300";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.black {
+  background: #423836;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.black, .swatch.black::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.black::after {
+  content: "black #423836";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.neutral {
+  background: #756e6c;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.neutral, .swatch.neutral::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral::after {
+  content: "neutral #756e6c";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.white {
+  background: #fdfdfd;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.white, .swatch.white::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.white::after {
+  content: "white #fdfdfd";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.white {
+  border: 1px solid #cac7c7;
+  color: #423836;
+}
+
+/*
+  primary color swatches
+*/
+.swatch.primary-1 {
+  background: #edf3e6;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.primary-1, .swatch.primary-1::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary-1::after {
+  content: "primary-1 #edf3e6";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.primary-2 {
+  background: #b6cd99;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.primary-2, .swatch.primary-2::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary-2::after {
+  content: "primary-2 #b6cd99";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.primary-3 {
+  background: #498300;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.primary-3, .swatch.primary-3::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary-3::after {
+  content: "primary-3 #498300";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.primary-4 {
+  background: #3a6900;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.primary-4, .swatch.primary-4::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.primary-4::after {
+  content: "primary-4 #3a6900";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.primary-1,
+.swatch.primary-2 {
+  color: #423836;
+}
+
+.swatch.primary-1 {
+  border: 1px solid #b6cd99;
+}
+
+/*
+  neutral color swatches
+*/
+.swatch.neutral-1 {
+  background: #f4f3f3;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.neutral-1, .swatch.neutral-1::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-1::after {
+  content: "neutral-1 #f4f3f3";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.neutral-2 {
+  background: #e1dfdf;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.neutral-2, .swatch.neutral-2::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-2::after {
+  content: "neutral-2 #e1dfdf";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.neutral-3 {
+  background: #cac7c7;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.neutral-3, .swatch.neutral-3::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-3::after {
+  content: "neutral-3 #cac7c7";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.neutral-4 {
+  background: #756e6c;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.neutral-4, .swatch.neutral-4::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-4::after {
+  content: "neutral-4 #756e6c";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.neutral-5 {
+  background: #423836;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.neutral-5, .swatch.neutral-5::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-5::after {
+  content: "neutral-5 #423836";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.neutral-6 {
+  background: #2e2726;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfd;
+}
+.swatch.neutral-6, .swatch.neutral-6::after {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-grid;
+  justify-content: center;
+}
+.swatch.neutral-6::after {
+  content: "neutral-6 #2e2726";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.swatch.neutral-1,
+.swatch.neutral-2,
+.swatch.neutral-3 {
+  color: #423836;
+}
+
+.swatch.neutral-1,
+.swatch.neutral-2 {
+  border: 1px solid #cac7c7;
+}
+
+/*
+  fonts by group
+*/
+/*
+  font accessor function
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  font: normal 16px sans-serif;
+}
+
+body {
+  background: #f4f3f3;
+  color: #423836;
+  font-family: Heebo, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link {
+  color: #498300;
+}
+
+.link:hover {
+  color: #b6cd99;
+}
+
+code,
+pre,
+.code {
+  font-family: Inconsolata, monospace;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
+  white-space: pre-line;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+small,
+.small {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+strong,
+.strong {
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+  font-family: Playfair Display, serif;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+small {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+ol,
+ul {
+  margin: 0 0 1rem 1.5rem;
+}
+
+ol li,
+ul li {
+  margin: 0 0 0.5rem;
+}
+
+hr {
+  border: 0 solid #cac7c7;
+  border-width: 1px 0 0;
+  margin: 2rem 0;
+}
+
+/*
+  alignment and justification
+*/
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+/*
+  display
+*/
+.block {
+  display: block;
+  margin: 0 0 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/*
+  gap for flex and grid
+*/
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-15 {
+  gap: 1.5rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+/*
+  margins + spacing
+*/
+.m-0 {
+  margin: 0;
+}
+
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-075 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mt-075 {
+  margin-top: 0.75rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-15 {
+  margin-top: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+/*
+  white-space
+*/
+.ws-normal {
+  white-space: normal;
+}
+
+.ws-pre-line {
+  white-space: pre-line;
+}
+
+.card {
+  background: #e1dfdf;
+  border-left: solid 0.25rem #cac7c7;
+  display: block;
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.button,
+.input.text {
+  border: 0;
+  border-radius: 0.25rem;
+  font: inherit;
+}
+
+.button {
+  background: #498300;
+  color: #fdfdfd;
+  cursor: pointer;
+  font-family: Heebo, sans-serif;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: 0.75rem 2rem;
+}
+
+.button:hover {
+  background: #3a6900;
+}
+
+.input.text {
+  background: #e1dfdf;
+  color: inherit;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.tooltip {
+  background: #cac7c7;
+  color: #423836;
+  border-radius: 1.5rem;
+  display: inline-block;
+  font-family: Heebo, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.75rem;
+  white-space: nowrap;
+}
+
+/*
+  display
+*/
+.layout.system main {
+  background: #f4f3f3;
+  padding: 2rem 2rem 4rem;
+}
+
+.layout.system nav {
+  background: #e1dfdf;
+  padding: 2rem 2rem 4rem;
+}
+
+.layout.system nav a {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0 -2rem 0.125rem;
+  padding: 0.375rem 2rem;
+}
+
+.layout.system nav a:hover:not(.active):not(.logo) {
+  background: #756e6c;
+  color: #fdfdfd;
+}
+
+.layout.system nav a.active {
+  background: #cac7c7;
+  border-left: 0.25rem solid #498300;
+  font-weight: 500;
+  padding-left: 1.75rem;
+}
+
+.layout.system .logo {
+  display: block;
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.layout.system .logo img {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+}
+
+/*
+  grid
+*/
+.layout.system {
+  display: grid;
+  grid-template-areas: "nav main";
+  grid-template-columns: 15rem 1fr;
+}
+
+.layout.system nav {
+  grid-area: nav;
+}
+
+.layout.system main {
+  grid-area: main;
+}
+
+/*# sourceMappingURL=index.css.map */
