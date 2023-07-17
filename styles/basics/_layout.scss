@@ -1,0 +1,27 @@
+main,
+nav {
+  padding: 2rem 2rem 4rem;
+}
+
+main {
+  background: color(neutral, 1);
+  color: color(black);
+  padding-left: 4rem;
+}
+
+nav {
+  background: color(neutral, 2);
+  color: color(black);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 16rem;
+  z-index: 1;
+}
+
+@media (min-width: 50rem) {
+  main {
+    padding-left: 18rem;
+  }
+}
