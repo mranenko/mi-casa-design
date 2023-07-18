@@ -79,11 +79,11 @@ nav .toggle:hover {
   color: color(white);
 }
 
-nav .toggle img {
+nav .toggle i {
   transition: transform .5s;
 }
 
-nav.active .toggle img {
+nav.active .toggle i {
   transform: rotate(180deg);
 }
 

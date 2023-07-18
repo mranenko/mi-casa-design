@@ -622,11 +622,11 @@ nav .toggle:hover {
   color: #fdfdfd;
 }
 
-nav .toggle img {
+nav .toggle i {
   transition: transform 0.5s;
 }
 
-nav.active .toggle img {
+nav.active .toggle i {
   transform: rotate(180deg);
 }
 
