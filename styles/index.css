@@ -847,10 +847,18 @@ textarea,
   white-space: nowrap;
 }
 
-.icons-preview {
+ul.icons-preview {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+ul.icons-preview li {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .icon-preview {
