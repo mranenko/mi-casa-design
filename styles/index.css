@@ -491,7 +491,7 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-family: Playfair Display, serif;
   font-weight: 600;
   line-height: 1.25;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
 }
 
 h1 {
@@ -644,6 +644,10 @@ nav.active .toggle i {
 */
 .items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-center {
