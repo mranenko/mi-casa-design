@@ -40,7 +40,7 @@ nav a:hover:not(.active):not(.logo):not(.toggle) {
   color: color(white);
 }
 
-nav a.active {
+nav a.active:not(.logo):not(.toggle) {
   background: color(neutral, 3);
   border-left: .25rem solid color(primary);
   font-weight: font(strong, weight);

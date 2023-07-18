@@ -1,0 +1,39 @@
+input[type="text"],
+input.text,
+.input.text,
+input.textarea,
+textarea,
+.textarea {
+  background: color(neutral, 2);
+  border: 0;
+  border-radius: .5rem;
+  color: color(black);
+  font: inherit;
+  padding: 1rem;
+  width: 100%;
+}
+
+input[type="text"],
+input.text,
+.input.text {
+  line-height: 1.125rem;
+}
+
+label,
+.label {
+  font-size: font(small, size);
+  font-weight: font(small, weight);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+input.textarea,
+textarea,
+.textarea {
+  height: 4.25rem;
+  resize: none;
+}

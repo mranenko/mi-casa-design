@@ -1,7 +1,6 @@
 .card {
   background: color(neutral, 2);
-  border-left: solid .25rem color(border);
+  border-radius: .5rem;
   display: block;
-  margin: 0 0 1.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1rem;
 }
