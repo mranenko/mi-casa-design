@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/index.css" />
 </head>
 
+
 <body>
   <nav>
     <a class="logo" href="index.html">
@@ -30,10 +31,12 @@
     </a>
   </nav>
 
+
   <main>
     <h2 class="title mb-15">Buttons</h2>
     <p>Button colors, sizes, and styles.</p>
     <hr>
+
 
     <h3 class="subtitle mb-15">Default</h3>
     <div class="button-row">
@@ -42,12 +45,34 @@
     </div>
     <hr>
 
-    <a class="link block mb-15 small" href="index.html">
+
+    <h3 class="subtitle mb-15">Icons + Links</h3>
+    <div class="button-row mb-1">
+      <button class="button link">Link Button</button>
+      <button class="button link hover">Link Button (hover)</button>
+    </div>
+
+    <div class="button-row">
+      <button class="button link">
+        <i class="ph-bold ph-arrow-left"></i>
+        Left Link
+      </button>
+      
+      <button class="button link">
+        Right Link
+        <i class="ph-bold ph-arrow-right"></i>
+      </button>
+    </div>
+    <hr>
+
+
+    <a class="button link" href="index.html">
       <i class="ph-bold ph-arrow-left"></i>
       Back to welcome page
     </a>
   </main>
 </body>
+
 
 <script src="scripts/index.js"></script>
 </html>

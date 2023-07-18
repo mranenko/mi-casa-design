@@ -1,0 +1,115 @@
+/*
+  color swatches
+*/
+
+@mixin swatch($background, $background-value: $background) {
+  background: $background-value;
+  font-size: font(small, size);
+  font-weight: font(small, weight);
+  position: relative;
+  // add line break after every word
+  word-spacing: 100vw;
+
+  &,
+  &::after { 
+    @include size(6rem);
+    align-items: center;
+    border-radius: .5rem;
+    display: inline-grid;
+    justify-content: center;
+  }
+
+  &::after {
+    content: '#{$background} #{$background-value}';
+    left: 0;
+    overflow: visible;
+    padding: 0 1rem;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+
+/*
+  initial color swatches
+*/
+
+$swatches-initial: (
+  primary: color(primary),
+  black: color(black),
+  neutral: color(neutral),
+  white: color(white),
+);
+
+@each $name, $color in $swatches-initial {
+  .swatch.#{'' + $name} {
+    @include swatch($name, $color);
+    color: color(white);
+  }
+}
+
+.swatch.white {
+  border: 1px solid color(border);
+  color: color(black);
+}
+
+
+/*
+  primary color swatches
+*/
+
+$swatches-primary: (
+  1: color(primary, 1),
+  2: color(primary, 2),
+  3: color(primary, 3),
+  4: color(primary, 4),
+);
+
+@each $name, $color in $swatches-primary {
+  .swatch.#{'primary-' + $name} {
+    @include swatch(#{'primary-' + $name}, $color);
+    color: color(white);
+  }
+}
+
+.swatch.primary-1,
+.swatch.primary-2 {
+  color: color(black);
+}
+
+.swatch.primary-1 {
+  border: 1px solid color(primary, 2);
+}
+
+
+/*
+  neutral color swatches
+*/
+
+$swatches-neutral: (
+  1: color(neutral, 1),
+  2: color(neutral, 2),
+  3: color(neutral, 3),
+  4: color(neutral, 4),
+  5: color(neutral, 5),
+  6: color(neutral, 6),
+);
+
+@each $name, $color in $swatches-neutral {
+  .swatch.#{'neutral-' + $name} {
+    @include swatch(#{'neutral-' + $name}, $color);
+    color: color(white);
+  }
+}
+
+.swatch.neutral-1,
+.swatch.neutral-2,
+.swatch.neutral-3 {
+  color: color(black);
+}
+
+.swatch.neutral-1,
+.swatch.neutral-2 {
+  border: 1px solid color(border);
+}

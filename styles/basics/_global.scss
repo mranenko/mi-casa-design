@@ -14,8 +14,7 @@ html {
 }
 
 body {
-  background: color(neutral, 1);
-  color: color(black);
+  @include background(color(neutral, 1), color(black));
   font-family: font(text, family);
   font-size: font(text, size);
   font-weight: font(text, weight);
@@ -28,7 +27,7 @@ a {
   text-decoration: none;
 }
 .link { color: color(primary); }
-.link:hover { color: color(primary, 2); }
+.link:hover { color: color(primary, 4); }
 
 code,
 pre,

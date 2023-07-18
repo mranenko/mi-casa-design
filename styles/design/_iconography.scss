@@ -1,3 +1,7 @@
+/*
+  icon preview list
+*/
+
 ul.icons-preview {
   display: flex;
   flex-wrap: wrap;
@@ -12,12 +16,20 @@ ul.icons-preview li {
   gap: .5rem;
 }
 
+
+/*
+  icon preview item
+*/
+
 .icon-preview {
+  @include background(color(neutral, 2), color(black));
+  @include size(6rem);
   align-items: center;
-  background: color(neutral, 2);
   border-radius: .5rem;
   display: inline-flex;
-  height: 8rem;
   justify-content: center;
-  width: 8rem;
+}
+
+.icon-preview i {
+  font-size: 2rem;
 }

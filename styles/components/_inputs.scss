@@ -25,15 +25,25 @@ label,
   font-weight: font(small, weight);
 }
 
+input.textarea,
+textarea,
+.textarea {
+  height: 4.25rem;
+  resize: none;
+}
+
+
+/*
+  input groups (e.g. label + input) and input rows (e.g. input + button)
+*/
+
 .input-group {
   display: flex;
   flex-direction: column;
   gap: .25rem;
 }
 
-input.textarea,
-textarea,
-.textarea {
-  height: 4.25rem;
-  resize: none;
+.input-row {
+  display: flex;
+  gap: .5rem;
 }

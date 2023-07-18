@@ -1,5 +1,5 @@
 .tag {
-  @include background-color(color(neutral, 3), color(black));
+  @include background(color(neutral, 3), color(black));
   border-radius: 1.5rem;
   display: inline-block;
   font-family: font(text, family);

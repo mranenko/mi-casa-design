@@ -1,3 +1,8 @@
+@mixin background($background, $color: contrast($background)) {
+  background: $background;
+  color: $color;
+}
+
 @mixin size($width, $height: $width) {
   height: $height;
   width: $width;

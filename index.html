@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/index.css" />
 </head>
 
+
 <body>
   <nav>
     <a class="logo" href="index.html">
@@ -30,6 +31,7 @@
     </a>
   </nav>
 
+  
   <main>
     <h2 class="title">Welcome</h2>
     <p>Design system for the Mi Casa restaurant order app.</p>
@@ -59,7 +61,7 @@
       </a>
     </div>
 
-    <div class="flex flex-column">
+    <div class="flex flex-column gap-05">
       <h1>Title One</h1>
       <h2>Title Two</h2>
       <h3>Title Three</h3>
@@ -102,6 +104,20 @@
         </div>
         <small>basket</small>
       </li>
+
+      <li>
+        <div class="icon-preview">
+          <i class="ph-bold ph-caret-left"></i>
+        </div>
+        <small>caret-left</small>
+      </li>
+
+      <li>
+        <div class="icon-preview">
+          <i class="ph-bold ph-caret-right"></i>
+        </div>
+        <small>caret-right</small>
+      </li>
     </ul>
     <hr>
 
@@ -115,7 +131,7 @@
 
     <div class="button-row">
       <button class="button">Button</button>
-      <button class="button hover">Button (hover)</button>
+      <button class="button link">Link Button</button>
     </div>
     <hr>
 
@@ -148,8 +164,10 @@
       <label>Label</label>
       <input class="input text" type="text" placeholder="Text" />
     </div>
+    <hr>
   </main>
 </body>
+
 
 <script src="scripts/index.js"></script>
 </html>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/index.css" />
 </head>
 
+
 <body>
   <nav>
     <a class="logo" href="index.html">
@@ -30,16 +31,18 @@
     </a>
   </nav>
 
+
   <main>
     <h2 class="title mb-15">Inputs</h2>
     <p>Various types of inputs.</p>
     <hr>
 
+    
     <h3 class="subtitle mb-15">Text + textarea</h3>
     <section class="flex flex-column gap-1">
       <div class="input-group">
         <label>Label</label>
-        <input class="input text" type="text" placeholder="Text" />
+        <input class="input text" placeholder="Text" type="text">
       </div>
 
       <div class="input-group">
@@ -49,12 +52,22 @@
     </section>
     <hr>
 
-    <a class="link block mb-15 small" href="index.html">
+    
+    <h3 class="subtitle mb-15">Input row</h3>
+    <div class="input-row">
+      <input class="input text" placeholder="Text" type="text">
+      <button class="button">Button</button>
+    </div>
+    <hr>
+
+
+    <a class="button link" href="index.html">
       <i class="ph-bold ph-arrow-left"></i>
       Back to welcome page
     </a>
   </main>
 </body>
+
 
 <script src="scripts/index.js"></script>
 </html>

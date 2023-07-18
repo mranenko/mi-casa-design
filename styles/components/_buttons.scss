@@ -1,25 +1,52 @@
-.button {
-  background: color(primary);
-  border: 0;
-  border-radius: 1.75rem;
-  color: color(white);
-  font: inherit;
-}
+/*
+  default buttons
+*/
 
 .button {
+  @include background(color(primary), color(white));
+  @include size(auto, 3.5rem);
+  align-items: center;
+  border: 0;
+  border-radius: 1.75rem;
   cursor: pointer;
+  display: inline-flex;
+  font: inherit;
   font-family: font(text, family);
   font-weight: font(strong, weight);
+  gap: .5rem;
+  justify-content: center;
   line-height: 1rem;
-  padding: 1.25rem 2rem;
+  padding: 0 2rem;
 }
 
 .button:hover,
 .button.hover {
-  background: color(primary, 4);
+  @include background(color(primary, 4), color(white));
 }
 
+
+/*
+  link buttons
+*/
+
+.button.link {
+  @include background(none, color(primary));
+  @include size(auto, 2.5rem);
+  padding: 0;
+}
+
+.button.link:hover,
+.button.link.hover {
+  @include background(none, color(primary, 4));
+}
+
+
+/*
+  button row
+*/
+
 .button-row {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
