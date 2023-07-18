@@ -29,16 +29,6 @@ a {
 .link { color: color(primary); }
 .link:hover { color: color(primary, 4); }
 
-code,
-pre,
-.code {
-  font-family: font(monospace, family);
-  font-size: font(monospace, size);
-  font-weight: font(monospace, weight);
-  line-height: #{calc(font(text, size) * font(text, line-height))};
-  white-space: pre-line;
-}
-
 small,
 .small {
   font-size: font(small, size);

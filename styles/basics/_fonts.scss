@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inconsolata&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Playfair+Display:wght@600&display=swap');
 
 
 /*
@@ -6,12 +6,6 @@
 */
 
 $fonts: (
-  monospace: (
-    family: #{'Inconsolata', monospace},
-    size: .75rem,
-    weight: 400,
-  ),
-  
   small: (
     size: .75rem,
     weight: 400,

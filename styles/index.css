@@ -13,7 +13,7 @@
 /*
   color by element property
 */
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inconsolata&family=Playfair+Display:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Playfair+Display:wght@600&display=swap");
 /*
   fonts by group
 */
@@ -56,16 +56,6 @@ a {
 
 .link:hover {
   color: #3a6900;
-}
-
-code,
-pre,
-.code {
-  font-family: Inconsolata, monospace;
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1.3125rem;
-  white-space: pre-line;
 }
 
 small,
