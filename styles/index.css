@@ -469,20 +469,6 @@ textarea,
   gap: 0.5rem;
 }
 
-.tag {
-  background: #cac7c7;
-  color: #423836;
-  border-radius: 1.5rem;
-  display: inline-block;
-  font-family: Heebo, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 0 0.25rem;
-  padding: 0.25rem 0.75rem;
-  white-space: nowrap;
-}
-
 /*
   color swatches
 */
@@ -917,6 +903,70 @@ ul.icons-preview li {
 
 .icon-preview i {
   font-size: 2rem;
+}
+
+/*
+  font preview list
+*/
+ul.font-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+/*
+  font preview item
+*/
+.font-preview {
+  background: #e1dfdf;
+  color: #423836;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.font-preview .sample {
+  font-size: 5rem;
+  text-align: right;
+}
+
+/*
+  individual fonts
+*/
+.font-heebo {
+  font-family: "Heebo", sans-serif;
+  line-height: 1;
+}
+
+.font-playfair-display {
+  font-family: "Playfair Display", serif;
+  line-height: 1.15;
+}
+
+/*
+  font detail list
+*/
+.font-detail-list {
+  border-top: 1px dotted #cac7c7;
+  display: grid;
+  margin: 2rem 0;
+  max-width: 40rem;
+}
+
+.font-detail-row {
+  align-items: center;
+  border-bottom: 1px dotted #cac7c7;
+  display: grid;
+  gap: 1rem;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=index.css.map */
