@@ -1,4 +1,4 @@
-<img src="images/screenshots/mi-casa-design-system.png" alt="" style="margin: 0 auto; max-width: 100%;" />
+<img src="assets/images/screenshots/mi-casa-design-system.png" alt="" style="margin: 0 auto; max-width: 100%;" />
 
 # Design system - Mi Casa
 

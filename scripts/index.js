@@ -1,7 +1,7 @@
 (function() {
 	let nav = {
-		nav: document.querySelector('nav'),
-		navToggle: document.querySelector('nav .toggle'),
+		nav: document.querySelector('#nav'),
+		navToggle: document.querySelector('#nav .toggle'),
 
 		initialize() {
 			this.navToggle.addEventListener('click', () => this.navToggleClick());

@@ -1,0 +1,9 @@
+footer {
+  @include background(color(white), color(black));
+  align-items: center;
+  box-shadow: 0 0 .75rem 0 rgba(color(black), 0.25);
+  display: flex;
+  justify-content: space-between;
+  height: 6.5rem;
+  padding: 0 2rem;
+}

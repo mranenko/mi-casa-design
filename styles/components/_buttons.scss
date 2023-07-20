@@ -6,22 +6,27 @@
   @include background(color(primary), color(white));
   @include size(auto, 3.5rem);
   align-items: center;
+  box-shadow: .25rem .25rem .375rem 0 rgba(color(black), 0.25);
   border: 0;
   border-radius: 1.75rem;
   cursor: pointer;
   display: inline-flex;
-  font: inherit;
   font-family: font(text, family);
+  font-size: font(text, size);
   font-weight: font(strong, weight);
-  gap: .5rem;
+  gap: .375rem;
   justify-content: center;
   line-height: 1rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .button:hover,
 .button.hover {
   @include background(color(primary, 4), color(white));
+}
+
+.button i {
+  font-size: 1.125rem;
 }
 
 
@@ -32,6 +37,7 @@
 .button.link {
   @include background(none, color(primary));
   @include size(auto, 2.5rem);
+  box-shadow: none;
   padding: 0;
 }
 

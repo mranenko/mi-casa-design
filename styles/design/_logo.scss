@@ -1,0 +1,26 @@
+/*
+  logomark preview list
+*/
+
+ul.logo-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+
+/*
+  logomark preview item
+*/
+
+.logo-preview {
+  @include background(color(neutral, 2), color(black));
+  @include size(10rem);
+  border-radius: .5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}

@@ -121,20 +121,23 @@ hr {
   margin: 2rem 0;
 }
 
-main,
-nav {
+#main,
+#nav {
   padding: 2rem 2rem 4rem;
 }
 
-main {
+#main {
   background: #f4f3f3;
   color: #423836;
   padding-left: 5rem;
 }
 
-nav {
+#nav {
   background: #e1dfdf;
   color: #423836;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   height: 100vh;
   left: -16rem;
   position: fixed;
@@ -144,11 +147,11 @@ nav {
   z-index: 1;
 }
 
-nav.active {
+#nav.active {
   left: 0;
 }
 
-nav a:not(.logo):not(.toggle) {
+#nav a:not(.header):not(.toggle) {
   display: block;
   font-size: 0.75rem;
   font-weight: 400;
@@ -156,68 +159,69 @@ nav a:not(.logo):not(.toggle) {
   padding: 0.375rem 2rem;
 }
 
-nav a:hover:not(.active):not(.logo):not(.toggle) {
+#nav a:hover:not(.active):not(.header):not(.toggle) {
   background: #756e6c;
   color: #fdfdfd;
 }
 
-nav a.active:not(.logo):not(.toggle) {
+#nav a.active:not(.toggle) {
   background: #cac7c7;
   border-left: 0.25rem solid #498300;
   font-weight: 500;
   padding-left: 1.75rem;
 }
 
-nav .logo {
-  display: block;
-  height: 5rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav .logo img {
-  display: inline-block;
-  height: 100%;
-  width: auto;
-}
-
-nav .toggle {
+#nav .header {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#nav .logo {
+  height: auto;
+  width: 9rem;
+}
+
+#nav .toggle {
   background: #cac7c7;
   color: #423836;
+  height: 100vh;
+  width: 3rem;
+  align-items: center;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  height: 100vh;
   position: absolute;
   right: -3rem;
   top: 0;
-  width: 3rem;
 }
 
-nav .toggle:hover {
+#nav .toggle:hover {
   background: #756e6c;
   color: #fdfdfd;
 }
 
-nav .toggle i {
+#nav .toggle i {
+  font-size: 1.125rem;
   transition: transform 0.5s;
 }
 
-nav.active .toggle i {
+#nav.active .toggle i {
   transform: rotate(180deg);
 }
 
 @media (min-width: 50rem) {
-  nav,
-  nav.active {
+  #nav,
+  #nav.active {
     left: 0;
   }
-  nav .toggle,
-  nav.active .toggle {
+  #nav .toggle,
+  #nav.active .toggle {
     display: none;
   }
-  main {
+  #main {
     padding-left: 18rem;
   }
 }
@@ -358,23 +362,28 @@ nav.active .toggle i {
   height: 3.5rem;
   width: auto;
   align-items: center;
+  box-shadow: 0.25rem 0.25rem 0.375rem 0 rgba(66, 56, 54, 0.25);
   border: 0;
   border-radius: 1.75rem;
   cursor: pointer;
   display: inline-flex;
-  font: inherit;
   font-family: Heebo, sans-serif;
+  font-size: 0.875rem;
   font-weight: 500;
-  gap: 0.5rem;
+  gap: 0.375rem;
   justify-content: center;
   line-height: 1rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .button:hover,
 .button.hover {
   background: #3a6900;
   color: #fdfdfd;
+}
+
+.button i {
+  font-size: 1.125rem;
 }
 
 /*
@@ -385,6 +394,7 @@ nav.active .toggle i {
   color: #498300;
   height: 2.5rem;
   width: auto;
+  box-shadow: none;
   padding: 0;
 }
 
@@ -409,6 +419,38 @@ nav.active .toggle i {
   border-radius: 0.5rem;
   display: block;
   padding: 1.25rem 1rem;
+}
+
+footer {
+  background: #fdfdfd;
+  color: #423836;
+  align-items: center;
+  box-shadow: 0 0 0.75rem 0 rgba(66, 56, 54, 0.25);
+  display: flex;
+  justify-content: space-between;
+  height: 6.5rem;
+  padding: 0 2rem;
+}
+
+header {
+  background: #423836;
+  color: #fdfdfd;
+  align-items: center;
+  display: flex;
+  height: 5.5rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+header .logo {
+  height: 2.25rem;
+  width: auto;
+}
+
+header .nav {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1.5rem;
 }
 
 input[type=text],
@@ -893,6 +935,32 @@ ul.icons-preview li {
 
 .icon-preview i {
   font-size: 2rem;
+}
+
+/*
+  logomark preview list
+*/
+ul.logo-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+/*
+  logomark preview item
+*/
+.logo-preview {
+  background: #e1dfdf;
+  color: #423836;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
 
 /*
