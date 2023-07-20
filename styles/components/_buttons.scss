@@ -20,8 +20,7 @@
   padding: 0 3rem;
 }
 
-.button:hover,
-.button.hover {
+.button:hover {
   @include background(color(primary, 4), color(white));
 }
 
