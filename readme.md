@@ -2,7 +2,16 @@
 
 # Design system - Mi Casa
 
-Design system for a restaurant order app using HTML + SCSS.
+Design system for a mobile restaurant ordering app using HTML/SCSS/JavaScript.
+
+---
+
+
+## Demo
+
+- <a href="https://mi-casa-design.netlify.app" target="_blank">mi-casa-design.netlify.app</a>
+
+---
 
 
 ## Development
@@ -23,7 +32,3 @@ Note: This project was created with node 18.16.0 and npm 9.5.1.
 ```bash
   npm start
 ```
-
-## View demo
-
-- <a href="https://mi-casa-design.netlify.app" target="_blank">mi-casa-design.netlify.app</a>
